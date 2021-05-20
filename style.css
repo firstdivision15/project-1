@@ -1,0 +1,197 @@
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: 250px 250px 250px;
+    grid-template-rows: 400px;
+}
+.col-1{
+    grid-column: 1;
+    background-color:hsl(31, 77%, 52%);
+    border-radius: 10px 0 0 10px;
+    position: relative;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.col-1 img{
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    width: 50px;
+}
+.col-1 h3{
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    display: inline-block;
+    -webkit-transform: scale(2, 1);
+    -moz-transform: scale(2, 1);
+    -o-transform: scale(2, 1);
+    transform: scale(1, 2);
+    color: white;
+    font-size: 16px;
+    
+    
+}
+.col-1 p{
+    position: absolute;
+    top: 30%;
+    left: 10%;
+    right: 20%;
+    line-height: 25px;
+    color: white;
+    font-size: 13px;
+    opacity: 0.6;
+}
+.col-1 button{
+    position: absolute;
+    top: 80%;
+    left: 10%;
+    background: transparent;
+    border-radius: 30px;
+    padding: 10px 30px ;
+    border: 3px solid #fff;
+    color: white;
+}
+.col-2{
+    grid-column: 2;
+    background-color: hsl(184, 100%, 22%);
+    position: relative;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.col-2 img{
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    width: 50px;
+}
+.col-2 h3{
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    display: inline-block;
+    -webkit-transform: scale(2, 1);
+    -moz-transform: scale(2, 1);
+    -o-transform: scale(2, 1);
+    transform: scale(1, 2);
+    color: white;
+    font-size: 16px;
+    
+    
+}
+.col-2 p{
+    position: absolute;
+    top: 30%;
+    left: 10%;
+    right: 20%;
+    line-height: 25px;
+    color: white;
+    font-size: 13px;
+    opacity: 0.6;
+}
+.col-2 button{
+    position: absolute;
+    top: 80%;
+    left: 10%;
+    background: transparent;
+    border-radius: 30px;
+    padding: 10px 30px ;
+    border: 3px solid #fff;
+    color: white;
+}
+.col-3{
+    grid-column: 3;
+    background-color: hsl(179, 100%, 13%);
+    border-radius: 0 10px 10px 0;
+    position: relative;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.col-3 img{
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    width: 50px;
+}
+.col-3 h3{
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    display: inline-block;
+    -webkit-transform: scale(2, 1);
+    -moz-transform: scale(2, 1);
+    -o-transform: scale(2, 1);
+    transform: scale(1, 2);
+    color: white;
+    font-size: 16px;
+    
+    
+}
+.col-3 p{
+    position: absolute;
+    top: 30%;
+    left: 10%;
+    right: 20%;
+    line-height: 25px;
+    color: white;
+    opacity: 0.6;
+    font-size: 13px;
+}
+.col-3 button{
+    position: absolute;
+    top: 80%;
+    left: 10%;
+    background: transparent;
+    border-radius: 30px;
+    padding: 10px 30px ;
+    border: 3px solid #fff;
+    color: white;
+}
+.col-1 button:hover{
+    background-color: white;
+    color: hsl(31, 77%, 52%);
+}
+.col-2 button:hover{
+    background-color: white;
+    color: hsl(184, 100%, 22%);
+}
+.col-3 button:hover{
+    background-color: white;
+    color: hsl(179, 100%, 13%);
+}
+button:hover{
+    transition: color 1s;
+    transition: background-color 1s;
+    cursor: pointer;
+}
+@media (max-width: 768px) {
+    .grid{
+        grid-template-columns: 250px;
+        grid-template-rows: 300px 300px 300px;
+        margin-top: 5%;
+
+    }
+    .col-1{
+        grid-row: 1;
+        grid-column: 1;
+        border-radius: 10px 10px 0 0;
+    }
+    .col-2{
+        grid-row: 2;
+        grid-column: 1;
+        border-radius: 0 0 0 0;
+    }
+    .col-3{
+        grid-row: 3;
+        grid-column: 1;
+        border-radius: 0 0 10px 10px;
+    }
+    body{
+        height: 200vh;
+    }
+}
