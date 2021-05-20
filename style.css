@@ -10,6 +10,7 @@ body{
     margin-right: auto;
     left: 0;
     right: 0;
+    width: 80%;
     display: grid;
     grid-template-columns: 250px 250px 250px;
     grid-template-rows: 400px;
