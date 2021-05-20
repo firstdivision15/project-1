@@ -1,15 +1,13 @@
 body{
     margin: 0;
     padding: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     height: 100vh;
 }
 
 .grid{
+    position: relative;
+    margin: auto;
     display: grid;
-    margin-top: 20%;
     grid-template-columns: 250px 250px 250px;
     grid-template-rows: 400px;
 }
