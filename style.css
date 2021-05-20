@@ -2,12 +2,15 @@ body{
     margin: 0;
     padding: 0;
     height: 100vh;
+    display: flex;
+    align-content: center;
+    justify-content: center;
 }
 
 .grid{
     display: grid;
     position: absolute;
-    left: 50%;
+    margin: auto;
     grid-template-columns: 250px 250px 250px;
     grid-template-rows: 400px;
 }
