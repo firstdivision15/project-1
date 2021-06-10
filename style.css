@@ -6,16 +6,28 @@ body{
     margin: 0;
     padding: 0;
     height: 100vh;
+<<<<<<< HEAD
     width: 100%;
+=======
+    display: flex;
+    justify-content: center;
+>>>>>>> b5db8daaa7b34cca6e2871279c9e4b44c7f2ee24
 }
 
 .grid{
     display: grid;
+<<<<<<< HEAD
     grid-template-columns: 1fr 1fr 1fr;
     height: 400px;
     width: 750px;
     margin: auto auto;
     vertical-align: middle;
+=======
+    position: absolute;
+    top: 20%;
+    grid-template-columns: 250px 250px 250px;
+    grid-template-rows: 400px;
+>>>>>>> b5db8daaa7b34cca6e2871279c9e4b44c7f2ee24
 }
 .col-1{
     grid-column: 1;
@@ -28,7 +40,7 @@ body{
     position: absolute;
     top: 10%;
     left: 10%;
-    width: 50px;
+    width: 49px;
 }
 .col-1 h3{
     position: absolute;
